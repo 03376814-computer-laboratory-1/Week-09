@@ -32,23 +32,24 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 ### เริ่มต้นกับ C# และ GDI+
 1. เรียกโปรแกรม Visual Studio
 2. สร้าง Project ใหม่ เป็นชนิด C# โดยมีชื่อ project คือ GDIPlus_1
+
 ![รูปที่ 1 การสร้าง Project ชนิด Windows Form App (.NET Framework)](./images/fig-01.png)
 
-รูปที่ 1 การสร้าง Project ชนิด Windows Form App (.NET Framework)
+__รูปที่ 1__ การสร้าง Project ชนิด Windows Form App (.NET Framework)
 
 3.	เมื่อ Wizard สร้าง Project เสร็จแล้ว จะนำเรามาที่หน้าต่าง Form1.cs[Design] ให้คลิกที่ปุ่ม Events ของ Properties pane ตาม (1) และ Double click ที่ Paint ตาม (2)
 
 ![รูปที่ 2 การเพิ่ม event ให้กับ Paint](./images/fig-02.png)
 
 
-รูปที่ 2 การเพิ่ม event ให้กับ Paint
+__รูปที่ 2__ การเพิ่ม event ให้กับ Paint
 
 
 4.	เพื่อให้โปรแกรมของเราสามารถใช้งาน GDI+ ในการวาดภาพ 2D ได้ ให้ทำการเพิ่ม “using System.Drawing.Drawing2D;”  ลงในบรรทัดที่ 10 ดังรูป
 
 ![รูปที่ 3 การเพิ่ม using System.Drawing.Drawing2D;](./images/fig-03.png)
 
-รูปที่ 3 การเพิ่ม using System.Drawing.Drawing2D;
+__รูปที่ 3__ การเพิ่ม using System.Drawing.Drawing2D;
 
 5. ให้เพิ่มบรรทัดต่อไปนี้ลงในฟังก์ชัน private void Form1_Paint(object sender, PaintEventArgs e)
 
@@ -63,7 +64,7 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 
 ![รูปที่ 4 ตัวอย่างการแก้ไขเมธอด Form1_Paint](./images/fig-04.png)
 
-รูปที่ 4 ตัวอย่างการแก้ไขเมธอด Form1_Paint
+__รูปที่ 4__ ตัวอย่างการแก้ไขเมธอด Form1_Paint
 
 
 6.	ทดลอง Build และ Run โปรแกรมและบันทึกผล
@@ -73,17 +74,15 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 
 ```
 
----------------
-
-
 ## 3.1 การใช้สี 
-
 
 ### 3.1.1 การใช้สีโดยการผสมค่าสี
 7.	เพิ่ม Code ต่อไปนี้ลงในฟังก์ชัน private void Form1_Paint(object sender, PaintEventArgs e) 
 
 ![](./images/fig-05.png) 
-รูปที่ 5 การใช้สีโดยการผสมค่าสี
+
+__รูปที่ 5__ การใช้สีโดยการผสมค่าสี
+
 8.	รันโปรแกรมและบันทึกผล 
 
 ```
@@ -91,12 +90,14 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 
 ```
 
-
 ### 3.1.2 การใช้สี โดยการใช้เมธอด FromName
+
 9.	เพิ่ม Code ต่อไปนี้ลงในฟังก์ชัน private void Form1_Paint(object sender, PaintEventArgs e)
  
 ![](./images/fig-06.png)  
-รูปที่ 6 การใช้สี โดยการใช้เมธอด FromName
+
+__รูปที่ 6__ การใช้สี โดยการใช้เมธอด FromName
+
 10.	รันโปรแกรมและบันทึกผล 
 
 ```
@@ -113,7 +114,9 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
  
 
  ![](./images/fig-07.png) 
-รูปที่ 7 ขนาดและสีของปากกา
+
+__รูปที่ 7__ ขนาดและสีของปากกา
+
 12.	รันโปรแกรมและบันทึกผล 
 
 
@@ -124,8 +127,11 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 
 ### 3.2.2 ชนิดของปากกาเป็นเส้นประ
 13.	เปลี่ยนชนิดของปากกาเป็นเส้นประ
+
  ![](./images/fig-08.png) 
-รูปที่ 8 เปลี่ยนชนิดของปากกาเป็นเส้นประ
+
+__รูปที่ 8__ เปลี่ยนชนิดของปากกาเป็นเส้นประ
+
 14.	รันโปรแกรมและบันทึกผล 
 
 ```
@@ -138,7 +144,9 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 15.	เขียนโปรแกรมใช้ปากการ่วมกับแปรงทาสี
 
 ![](./images/fig-09.png)  
-รูปที่ 9 การใช้ปากการ่วมกับแปรงทาสี
+
+__รูปที่ 9__ การใช้ปากการ่วมกับแปรงทาสี
+
 16.	รันโปรแกรมและบันทึกผล 
 
 ```
@@ -147,7 +155,7 @@ GDI+ (Graphics Device Interface Plus) เป็นกราฟฟิกส์ไ
 ```
 
 
-3.2.4 ใช้ Pen ร่วมกับ HatchBrush เพื่อสร้างลายเส้นแบบต่างๆ
+### 3.2.4 ใช้ Pen ร่วมกับ HatchBrush เพื่อสร้างลายเส้นแบบต่างๆ
 17.	ใช้ Pen ร่วมกับ HatchBrush เพื่อสร้างลายเส้นแบบต่างๆ
  
 ![](./images/fig-10.png) 
