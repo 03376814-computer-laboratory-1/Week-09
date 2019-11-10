@@ -65,7 +65,7 @@ namespace GDIPlus_1
             Rectangle mouth = new Rectangle(85, 110, 20, 5);
             Rectangle tattooMouth = new Rectangle(88, 117, 15, 3);
             g.FillClosedCurve(Brushes.Black, body);
-            g.FillEllipse(Brushes.White, face);
+            g.FillEllipse(Brushes.OldLace, face);
             g.FillClosedCurve(Brushes.Thistle, eyebrowR);
             g.FillClosedCurve(Brushes.Thistle, eyebrowL);
             g.FillEllipse(Brushes.Black, eyeR);
