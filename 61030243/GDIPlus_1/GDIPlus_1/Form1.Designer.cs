@@ -30,6 +30,8 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ScaleX = new System.Windows.Forms.Label();
+            this.ScaleY = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -46,11 +48,31 @@
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 1;
             // 
+            // ScaleX
+            // 
+            this.ScaleX.AutoSize = true;
+            this.ScaleX.Location = new System.Drawing.Point(585, 38);
+            this.ScaleX.Name = "ScaleX";
+            this.ScaleX.Size = new System.Drawing.Size(52, 17);
+            this.ScaleX.TabIndex = 2;
+            this.ScaleX.Text = "ScaleX";
+            // 
+            // ScaleY
+            // 
+            this.ScaleY.AutoSize = true;
+            this.ScaleY.Location = new System.Drawing.Point(585, 66);
+            this.ScaleY.Name = "ScaleY";
+            this.ScaleY.Size = new System.Drawing.Size(52, 17);
+            this.ScaleY.TabIndex = 3;
+            this.ScaleY.Text = "ScaleY";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ScaleY);
+            this.Controls.Add(this.ScaleX);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
@@ -66,6 +88,8 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label ScaleX;
+        private System.Windows.Forms.Label ScaleY;
     }
 }
 
