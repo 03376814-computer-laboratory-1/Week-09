@@ -25,6 +25,13 @@ namespace GDIPlus_1
             Bitmap bmp = new Bitmap("D:\\11.PNG");
             this.SetClientSizeCore(bmp.Width, bmp.Height);
             Rectangle desRect = new Rectangle(0, 0, bmp.Width, bmp.Height);
+            Brush myBrush = new SolidBrush(Color.Coral);
+            g.DrawImage(bmp, desRect);
+            g.DrawString("Hello World",                 //String
+                new Font("Verdana", 30, FontStyle.Bold),   //Font,size,style
+                myBrush,
+                0,      //x position to display font
+                0);     //y position to display font
             g.Dispose();
         }
 
