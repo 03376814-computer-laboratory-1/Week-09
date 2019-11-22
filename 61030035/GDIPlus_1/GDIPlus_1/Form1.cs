@@ -22,15 +22,13 @@ namespace GDIPlus_1
         {
             Graphics g = e.Graphics;
             Pen pen = new Pen(Color.Green, 2);
-            pen.DashStyle = DashStyle.DashDot;
-            e.Graphics.DrawLine(pen, 10, 80, 220, 80);
-            pen.Dispose();
-            pen = new Pen(Brushes.DeepSkyBlue, 4);
-            e.Graphics.DrawLine(pen,10,120,220,120);
-            pen.Dispose();
-
-
-
+            Point[] pt =
+            {
+                new Point(20,200),new Point(50,20),new Point (100,100),
+                new Point(150,230), new Point(200,200)
+            };
+            g.DrawCurve(pen, pt);
+            g.Dispose();
         }
     }
 }
