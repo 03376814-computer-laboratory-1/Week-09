@@ -428,6 +428,7 @@ __รูปที่ 31__ การเขียนข้อความลงใ
 [GDI+ .NET Color & HatchStyle Chart](https://drewnoakes.com/snippets/GdiColorChart/)
 
 การบ้าน
+
 ![](image/00.PNG)
 
 ![](image/00-1.PNG)
