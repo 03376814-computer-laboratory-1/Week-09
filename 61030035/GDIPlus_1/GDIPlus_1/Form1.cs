@@ -23,8 +23,8 @@ namespace GDIPlus_1
 
             Graphics g = e.Graphics;
             Bitmap bmp = new Bitmap("D:\\11.PNG");
-            this.SetClientSizeCore(bmp.Width + 20, bmp.Height + 20);
-            g.DrawImage(bmp, 10, 10);
+            this.SetClientSizeCore(bmp.Width, bmp.Height);
+            Rectangle desRect = new Rectangle(0, 0, bmp.Width, bmp.Height);
             g.Dispose();
         }
 
