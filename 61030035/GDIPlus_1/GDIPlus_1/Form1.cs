@@ -20,19 +20,16 @@ namespace GDIPlus_1
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+           
             Graphics g = e.Graphics;
-            //Draw reference ellipse with dash line.
-            Pen penEllipse = new Pen(Color.Brown);
-            penEllipse.DashStyle = DashStyle.Dash;
-            g.DrawEllipse(penEllipse, 20, 20, 200, 150);
-
-            //Draw arc
-            Pen penPie = new Pen(Color.Magenta, 2);
-            g.DrawPie(penPie, 20, 20, 200, 150, 45, 90);
-            Pen penPie1 = new Pen(Color.BlueViolet, 2);
-            g.DrawPie(penPie, 20, 20, 200, 150, 150, 45);
-
             g.Dispose();
+        }
+
+        private void panel1_Paint(object sender,PaintEventArgs e)
+        {
+            LinearGradientBrush pnIGdt = new LinearGradientBrush(panel1.ClientRectangle, Color.Yellow, Color.Navy, 0f, true);
+            e.Graphics.FillRectangle(pnIGdt, panel1.ClientRectangle);
+            pnIGdt.Dispose();
         }
     }
 }
