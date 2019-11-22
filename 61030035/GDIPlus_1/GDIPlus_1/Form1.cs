@@ -22,18 +22,13 @@ namespace GDIPlus_1
         {
 
             Graphics g = e.Graphics;
-            Bitmap bmp = new Bitmap("D:\\11.PNG");
-            this.SetClientSizeCore(bmp.Width, bmp.Height);
-            Rectangle desRect = new Rectangle(0, 0, bmp.Width, bmp.Height);
-            Brush myBrush = new SolidBrush(Color.Coral);
-            g.DrawImage(bmp, desRect);
-            g.DrawString("Hello World",                 //String
-                new Font("Verdana", 30, FontStyle.Bold),   //Font,size,style
-                myBrush,
-                0,      //x position to display font
-                0);     //y position to display font
+            //Draw circle
+            Rectangle dog = new Rectangle(20, 20, 300, 300);
+            g.DrawEllipse(Pens.Black, dog);
+
             g.Dispose();
         }
 
+       
     }
 }
