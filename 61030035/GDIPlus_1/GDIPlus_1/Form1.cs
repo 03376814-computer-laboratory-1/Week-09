@@ -20,16 +20,13 @@ namespace GDIPlus_1
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-           
+
             Graphics g = e.Graphics;
+            Bitmap bmp = new Bitmap("D:\\11.PNG");
+            this.SetClientSizeCore(bmp.Width + 20, bmp.Height + 20);
+            g.DrawImage(bmp, 10, 10);
             g.Dispose();
         }
 
-        private void panel1_Paint(object sender,PaintEventArgs e)
-        {
-            LinearGradientBrush pnIGdt = new LinearGradientBrush(panel1.ClientRectangle, Color.Yellow, Color.Navy, 0f, true);
-            e.Graphics.FillRectangle(pnIGdt, panel1.ClientRectangle);
-            pnIGdt.Dispose();
-        }
     }
 }
