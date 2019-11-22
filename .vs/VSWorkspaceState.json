@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\61030035",
+    "\\61030035\\GDI",
+    "\\61030035\\GDIPlus_1",
+    "\\61030035\\GDI\\GDI",
     "\\61030243",
     "\\61030243\\GDIPlus_1"
   ],
-  "SelectedNode": "\\61030243\\GDIPlus_1\\GDIPlus_1.sln",
+  "SelectedNode": "\\61030035\\GDI\\GDI\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

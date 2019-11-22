@@ -38,25 +38,25 @@ namespace GDI
             g.FillEllipse(Brushes.LightPink, ear3);
             g.DrawEllipse(Pens.Black, ear3);
             //head
-            Rectangle dog = new Rectangle(200, 100, 150, 150);
-             g.FillEllipse(Brushes.Pink, dog);
-            g.DrawEllipse(Pens.Black, dog);
+            Rectangle pig = new Rectangle(200, 100, 150, 150);
+             g.FillEllipse(Brushes.Pink, pig);
+            g.DrawEllipse(Pens.Black, pig);
             //eyelife
-            Rectangle dog1 = new Rectangle(230,150, 20, 20);
-            g.FillEllipse(Brushes.Black, dog1);
-            g.DrawEllipse(Pens.Black, dog1);
+            Rectangle pig1 = new Rectangle(230,150, 20, 20);
+            g.FillEllipse(Brushes.Black, pig1);
+            g.DrawEllipse(Pens.Black, pig1);
             //eyeright
-            Rectangle dog2 = new Rectangle(295, 150, 20, 20);
-            g.FillEllipse(Brushes.Black, dog2);
-            g.DrawEllipse(Pens.Black, dog2);
+            Rectangle pig2 = new Rectangle(295, 150, 20, 20);
+            g.FillEllipse(Brushes.Black, pig2);
+            g.DrawEllipse(Pens.Black, pig2);
             //nose
-            Rectangle dog3 = new Rectangle(245, 180, 60, 40);
-            g.FillEllipse(Brushes.HotPink, dog3);
-            g.DrawEllipse(Pens.Black, dog3);
+            Rectangle pig3 = new Rectangle(245, 180, 60, 40);
+            g.FillEllipse(Brushes.HotPink, pig3);
+            g.DrawEllipse(Pens.Black, pig3);
             //nose
-            Rectangle dog4 = new Rectangle(255, 190, 15, 20);
-            g.FillEllipse(Brushes.LightPink, dog4);
-            g.DrawEllipse(Pens.Black, dog4);
+            Rectangle pig4 = new Rectangle(255, 190, 15, 20);
+            g.FillEllipse(Brushes.LightPink, pig4);
+            g.DrawEllipse(Pens.Black, pig4);
             //nose1
             Rectangle nose = new Rectangle(280, 190, 15, 20);
             g.FillEllipse(Brushes.LightPink, nose);
