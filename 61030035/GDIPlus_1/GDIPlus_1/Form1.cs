@@ -21,11 +21,21 @@ namespace GDIPlus_1
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            Pen myPen = new Pen(Color.Blue, 3);
-            g.DrawRectangle(myPen, 10, 120, 100, 100);
-
+            //Draw ciecle
             Rectangle rect = new Rectangle(10, 10, 100, 100);
-            g.DrawRectangle(myPen, rect);
+            g.DrawEllipse(Pens.Purple, rect);
+
+            //Fill circle
+            Rectangle rect1 = new Rectangle(10, 120, 100, 100);
+            g.FillEllipse(Brushes.DeepPink, rect1);
+
+            //Draw ellipse
+            Rectangle rect2 = new Rectangle(150, 10, 120, 100);
+            g.DrawEllipse(Pens.DarkSlateBlue, rect2);
+
+            //Fill ellipse
+            Rectangle rect3 = new Rectangle(150, 120, 120, 100);
+            g.FillEllipse(Brushes.Firebrick, rect3);
             g.Dispose();
         }
     }
