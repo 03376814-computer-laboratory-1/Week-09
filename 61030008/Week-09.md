@@ -428,6 +428,7 @@ __รูปที่ 31__ การเขียนข้อความลงใ
 
 การบ้าน
 
+![](./pic/homework.JPG) 
 
 ```
 using System;
@@ -519,7 +520,7 @@ namespace Toy
 
 
 
-![](./pic/Homework.JPG) 
+
 
 ## References
 
