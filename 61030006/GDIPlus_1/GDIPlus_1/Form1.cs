@@ -23,12 +23,18 @@ namespace GDIPlus_1
 
             Graphics g = e.Graphics;
             Bitmap bmp = new Bitmap("C:\\corgi.PNG");
-            Rectangle destrect = new Rectangle(10, 10, bmp.Width / 2, bmp.Height / 2);
-            Rectangle srcrect = new Rectangle(0, 0, bmp.Width, bmp.Height);
-            this.SetClientSizeCore(destrect.Width + 20, destrect.Height + 20);
-            g.DrawImage(bmp, destrect, srcrect, GraphicsUnit.Pixel);
-            g.Dispose();
+            this.SetClientSizeCore(bmp.Width, bmp.Height);
+            Rectangle destRect = new Rectangle(0, 0, bmp.Width, bmp.Height);
+            Brush mybrush = new SolidBrush(Color.Coral);
+            g.DrawImage(bmp, destRect);
+            g.DrawString("Hello bum!!!",
+            new Font("Verdana", 30, FontStyle.Bold),
+            mybrush,
+            50,
+            0);
 
+
+            g.Dispose();
         }
       }
     }
