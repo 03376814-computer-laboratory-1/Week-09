@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB143F62-8BE1-4D7B-BB7D-F2BEFD132B07}</ProjectGuid>
+    <ProjectGuid>{3410D012-855C-438C-AAD6-CF7B89B7248B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GDIPlus_1</RootNamespace>
     <AssemblyName>GDIPlus_1</AssemblyName>
