@@ -22,19 +22,21 @@ namespace GDIPlus_1
         {
             
             Graphics g = e.Graphics;
-            Image image = Image.FromFile("C:\\corgi.PNG");
-            TextureBrush brush
-                 = new TextureBrush(image);
-            Rectangle rect = new Rectangle(100, 100,280, 300);
-            g.FillEllipse(brush, rect);
-
             g.Dispose();
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            LinearGradientBrush pnlGdt = new LinearGradientBrush(panel1.ClientRectangle, 
+                Color.Yellow, Color.Navy, ArgumentOutOfRangeException, true);
+
+
+
+
 
 
 
 
 
         }
-
-    }
 }
