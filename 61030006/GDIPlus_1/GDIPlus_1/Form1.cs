@@ -25,6 +25,8 @@ namespace GDIPlus_1
             g.DrawRectangle(bluepen, 10, 10, 100, 100);
             bluepen.Dispose();
 
+
+
         }
     }
 }
