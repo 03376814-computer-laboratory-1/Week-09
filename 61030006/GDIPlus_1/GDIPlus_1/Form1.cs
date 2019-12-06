@@ -29,6 +29,9 @@ namespace GDIPlus_1
             g.DrawEllipse(somepen, 20, 20, 200, 200);
             somepen.Dispose();
 
+            Color col = Color.FromName("LightGreen");
+            this.BackColor = col;
+
         }
     }
 }
