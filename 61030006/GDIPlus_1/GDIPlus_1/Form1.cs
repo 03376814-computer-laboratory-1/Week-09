@@ -20,23 +20,13 @@ namespace GDIPlus_1
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            
+
             Graphics g = e.Graphics;
+            Bitmap bmp = new Bitmap("C:\\corgi.PNG");
+            this.SetClientSizeCore(bmp.Width + 20, bmp.Height + 20);
+            g.DrawImage(bmp, 10, 10);
             g.Dispose();
 
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            LinearGradientBrush pnlGdt = new LinearGradientBrush(panel1.ClientRectangle, 
-                Color.Yellow, Color.Navy, ArgumentOutOfRangeException, true);
-
-
-
-
-
-
-
-
-
-        }
-}
+      }
+    }
