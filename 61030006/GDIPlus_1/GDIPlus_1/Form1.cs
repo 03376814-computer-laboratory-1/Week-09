@@ -21,27 +21,13 @@ namespace GDIPlus_1
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            GraphicsPath gp = new GraphicsPath();
+            Pen mypen = new Pen(Color.Blue, 3);
+            g.DrawRectangle(mypen, 10, 120, 100, 100);
+            g.DrawRectangle(mypen, 10, 120, 100, 100);
 
-            gp.AddCurve(new Point[]
-            {
-                new Point(100,50),
-                new Point(105,40),
-                new Point(120,40),
-                new Point(130,65),
-                new Point(100,100),
-            }, 0.5f);
 
-            gp.AddCurve(new Point[]
-            {
-                new Point(100,100),
-                new Point(70,65),
-                new Point(80,40),
-                new Point(95,40),
-                new Point(100,50),
-            }, 0.5f);
-
-            g.DrawPath(new Pen(Color.Red, 3), gp);
+            Rectangle rect = new Rectangle(10, 10, 100, 100);
+            g.DrawRectangle(mypen, rect);
             g.Dispose();
 
 
