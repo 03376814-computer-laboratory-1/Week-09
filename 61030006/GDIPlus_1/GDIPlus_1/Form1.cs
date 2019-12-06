@@ -22,10 +22,10 @@ namespace GDIPlus_1
         {
             
             Graphics g = e.Graphics;
-            Image image = Image.FromFile("This PC:\\corgi.PNG");
+            Image image = Image.FromFile("C:\\corgi.PNG");
             TextureBrush brush
                  = new TextureBrush(image);
-            Rectangle rect = new Rectangle(10, 10, 180, 150);
+            Rectangle rect = new Rectangle(100, 100,280, 300);
             g.FillEllipse(brush, rect);
 
             g.Dispose();
