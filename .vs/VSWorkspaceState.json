@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\61030007",
+    "\\61030007\\lab09",
+    "\\61030007\\lab09\\lab09",
+    "\\61030007\\week-09",
+    "\\61030007\\week-09\\week-09",
+    "\\61030054",
     "\\61030243",
     "\\61030243\\GDIPlus_1"
   ],
-  "SelectedNode": "\\61030243\\GDIPlus_1\\GDIPlus_1.sln",
+  "SelectedNode": "\\61030007\\week-09\\week-09\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
