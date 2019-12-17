@@ -25,9 +25,17 @@ namespace GDIPlus_1
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            Pen bluepen = new Pen(Color.Blue, 2);
-            g.DrawRectangle(bluepen, 10, 10, 100, 100);
-            bluepen.Dispose();
+            Brush mybrush = new SolidBrush(Color.Black) ;
+            Pen mypen = new Pen(mybrush,5);
+            g.DrawEllipse(mypen,10,10,200,200);
+            Rectangle eyeR = new Rectangle(69, 70, 13, 10);
+            Rectangle eyeL = new Rectangle(106, 70, 13, 10);
+            Rectangle Mouse = new Rectangle(85, 110, 20, 5);
+            g.FillEllipse(Brushes.Black, eyeR);
+            g.FillEllipse(Brushes.Black, eyeL);
+            g.FillEllipse(Brushes.Black, Mouse);
+            mypen.Dispose();
+            mybrush.Dispose();
         }
     }
 }
