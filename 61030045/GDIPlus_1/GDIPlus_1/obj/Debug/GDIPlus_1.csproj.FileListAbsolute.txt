@@ -1,0 +1,9 @@
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\bin\Debug\GDIPlus_1.exe.config
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\bin\Debug\GDIPlus_1.exe
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\bin\Debug\GDIPlus_1.pdb
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\obj\Debug\GDIPlus_1.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\obj\Debug\GDIPlus_1.Form1.resources
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\obj\Debug\GDIPlus_1.Properties.Resources.resources
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\obj\Debug\GDIPlus_1.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\obj\Debug\GDIPlus_1.exe
+C:\Users\asus\source\repos\Week-09\61030045\GDIPlus_1\GDIPlus_1\obj\Debug\GDIPlus_1.pdb
